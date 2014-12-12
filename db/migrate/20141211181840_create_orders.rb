@@ -6,6 +6,7 @@ class CreateOrders < ActiveRecord::Migration
       t.string :streetaddres
       t.string :city
       t.string :state
+      t.integer :zip
       t.integer :phonenumber
       t.integer :boxcount
       t.references :user, index: true
