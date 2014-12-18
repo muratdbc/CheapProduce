@@ -41,6 +41,9 @@ class SessionsController < DeviseController
 
 
   protected
+  def after_sign_in_path_for(resource)
+    new_order_path
+  end
 
   def sign_in_params
     devise_parameter_sanitizer.sanitize(:sign_in)

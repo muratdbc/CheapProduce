@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 20141211181840) do
     t.string   "city"
     t.string   "state"
     t.integer  "zip"
-    t.integer  "phonenumber"
+    t.string   "phonenumber"
     t.integer  "boxcount"
+    t.integer  "ispaid",       default: 0
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
