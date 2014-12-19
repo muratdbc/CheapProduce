@@ -1,12 +1,27 @@
-<%= form_tag charges_path do %>
-  <article>
-    <label class="amount">
-      <span>Amount: $15.00</span>
-    </label>
-  </article>
+<div class="container-fluid">
+  <div class="col-md-offset-2 col-md-8">
+   <div class="row">
+    <h2 class="text-center">You are about to buy one fit all size fresh produce. It will delivered to the below address</h2>
+    <h3>Street Address : <%=@lastOrder.streetaddres%></h3>
+    <h3>Zip Code :<%=@lastOrder.zip%></h3>
+    <h3>City : <%=@lastOrder.city%></h3>
+    <h3>State :<%=@lastOrder.state%></h3>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"></script>
-<% end %>
+
+    </div>
+    <div class="col-md-offset-5 row">
+    <%= form_tag charges_path do %>
+    <article>
+      <label class="amount">
+        <span>Amount: $15.00</span>
+      </label>
+    </article>
+
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+    data-description="A weekly Produce"
+    data-amount="1500"></script>
+    <% end %>
+    </div>
+  </div>
+</div>

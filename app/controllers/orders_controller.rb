@@ -15,6 +15,10 @@ class OrdersController < ApplicationController
     redirect_to new_charge_path
   end
 
+  def edit
+    @order=Orders.find(params[:id])
+  end
+
 
   private
 

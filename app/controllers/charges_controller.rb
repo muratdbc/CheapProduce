@@ -1,6 +1,9 @@
 class ChargesController < ApplicationController
 
 def new
+  @user=current_user
+  @lastOrder=@user.orders.last
+  p @lastOrder
 end
 
 def create

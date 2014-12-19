@@ -1,39 +1,39 @@
 <div class="container">
   <div class="col-md-8">
-<%= bootstrap_form_for @order do  |f| %>
-  <fieldset>
-  <legend>Order Produce</legend>
-  <ul>
-  <div>
-    <%= f.text_field :firstname,label: 'First Name' %>
-  </div>
-    <div>
-      <%= f.text_field :lastname,label: 'Last Name' %>
-    </div>
-    <div>
-      <%= f.text_field :streetaddres,label: 'Street Address' %>
-    </div>
-    <div>
-      <%= f.text_field :city,label: 'City' %>
-    </div>
-    <div>
-      <%= f.text_field :state,label: 'State' %>
-    </div>
-    <div>
-      <%= f.text_field :zip,label: 'Zip Code'%>
-    </div>
-    <div>
-      <%= f.text_field :phonenumber,label: 'Phone Number' %>
-    </div>
-    <div>
-      <%= f.select :boxcount, [[1, 1], [2, 2]], { label: "Choose your box count" } %>
-    </div>
-    <div>
-      <%= f.submit "Proceed to Checkout",class: "btn btn-success"%>
-    </div>
-  </ul>
+    <%= bootstrap_form_for @order do  |f| %>
+    <fieldset>
+      <legend>Order Produce</legend>
+      <ul>
+        <div>
+          <%= f.text_field :firstname,label: 'First Name' %>
+        </div>
+        <div>
+          <%= f.text_field :lastname,label: 'Last Name' %>
+        </div>
+        <div>
+          <%= f.text_field :streetaddres,label: 'Street Address' %>
+        </div>
+        <div>
+          <%= f.text_field :city,label: 'City' %>
+        </div>
+        <div>
+          <%= f.text_field :state,label: 'State' %>
+        </div>
+        <div>
+          <%= f.text_field :zip,label: 'Zip Code'%>
+        </div>
+        <div>
+          <%= f.text_field :phonenumber,label: 'Phone Number' %>
+        </div>
+        <div>
+          <%= f.select :boxcount, [[1, 1], [2, 2]], { label: "Choose your box count" } %>
+        </div>
+        <div>
+          <%= f.submit "Proceed to Checkout",class: "btn btn-success"%>
+        </div>
+      </ul>
 
-  </fieldset>
-<%end%>
-</div>
+    </fieldset>
+    <%end%>
+  </div>
 </div>
