@@ -12,11 +12,25 @@ body {
 
 .business-header {
     height: 400px;
-    background: url('bg.jpg') center center no-repeat scroll;
+    background: url('http://placehold.it/1280x960') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+
+.navbar-inverse{
+    background-color:#1ED644;
+    border-color:#1ED644;
+}
+
+.navbar-brand , #bs-example-navbar-collapse-1 li a{
+color: #03230A;
+}
+#bs-example-navbar-collapse-1 li  a:hover,#bs-example-navbar-collapse-1 li  a:focus {
+    color:#EDF2EE;
+    background-color: transparent;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
