@@ -10,4 +10,8 @@ class UsersController < ApplicationController
   		 render json: {:status => 'done'}
   	end
   end
+
+  def question
+  	render :questions
+  end
 end

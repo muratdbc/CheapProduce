@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'users#welcome'
   post 'subscribe' =>'users#subscribe'
+  get 'faq' => 'users#question'
 
   resources :orders
   resources :charges
