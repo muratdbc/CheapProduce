@@ -20,16 +20,20 @@ body {
 }
 
 
-.navbar-inverse{
+.navbar-inverse {
     background-color:#1ED644;
     border-color:#1ED644;
+    z-index:-1;
+    position: absolute; 
 }
-
-.navbar-brand , #bs-example-navbar-collapse-1 li a{
-color: #03230A;
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF;
+}
+#bs-example-navbar-collapse-1 li a{
+color: #FFFFFF;
 }
 #bs-example-navbar-collapse-1 li  a:hover,#bs-example-navbar-collapse-1 li  a:focus {
-    color:#EDF2EE;
+    color:#130101;
     background-color: transparent;
 }
 
