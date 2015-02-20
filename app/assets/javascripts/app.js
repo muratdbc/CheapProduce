@@ -3,15 +3,18 @@
 
 $( document ).ready(function() {
 	$("#subscribe").submit(function(event){
-		// var values = $('#subscribe').serialize();
+		var values = $(this).serialize();
 		event.preventDefault();
 		$.ajax({
-			contentType: "application/json; charset=utf-8",
 			type: 'POST',
-			data: JSON.stringify($('#subscribe').serialize()),
+			data: {email: $("#email").val(), zipCode: $("#zipCode").val()},
 			url: '/subscribe'
 		})
 		.success(function(data){
+			$("#subscribe").hide();
+			$("#capture h2").empty();
+			$("#capture h2").html("We will get back to you soon. Promise!")
+
 			console.log(data)
 		}).error(function(data){
 			console.log(data)
