@@ -37,6 +37,16 @@ color: #FFFFFF;
     background-color: transparent;
 }
 
+#ribbon {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    border: 0; 
+    z-index=1
+}
+
+
+
 /* Customize the text color and shadow color and to optimize text legibility. */
 
 .tagline {

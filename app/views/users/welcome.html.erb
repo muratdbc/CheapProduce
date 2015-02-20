@@ -1,7 +1,6 @@
 <body>
 
 
-
     <!-- Image Background Page Header -->
     <!-- Note: The background image is set within the business-casual.css file. -->
     <header >
@@ -52,16 +51,16 @@
         <div class="row">
             <div class="col-sm-offset-2 col-sm-8 text-center">
                 <h2>Please subscribe below to get an email about the service start date</h2>
-                <form class="form-inline">
+                <form id="subscribe" class="form-inline" method="POST">
                       <div class="form-group">
                         <label for="exampleInputName2">email</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Please type your email">
+                        <input type="email" class="form-control" id="exampleInputName2" name="email" placeholder="murat@gmail.com">
                         </div>
                        <div class="form-group">
                         <label for="exampleInputEmail2">Zip Code</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Please type your zip code">
+                        <input type="text" class="form-control" id="exampleInputEmail2"name="zipCode" placeholder="94598">
                        </div>
-                    <button type="submit" class="btn btn-success">Send invitation</button>
+                    <input type="submit" class="btn btn-success">
                 </form>
             </div>
         </div>
