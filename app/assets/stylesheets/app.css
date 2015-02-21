@@ -24,7 +24,7 @@ body {
     background-color:#1ED644;
     border-color:#1ED644;
     z-index:-1;
-    position: absolute; 
+    position: absolute;
 }
 .navbar-inverse .navbar-brand {
   color: #FFFFFF;
@@ -39,10 +39,10 @@ color: #FFFFFF;
 
 #ribbon {
     position: absolute;
-    top: 0; 
-    left: 0; 
-    border: 0; 
-    z-index=1
+    top: 0;
+    left: 0;
+    border: 0;
+    z-index=1;
 }
 
 
